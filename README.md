@@ -1,6 +1,7 @@
-# Project Title
+# RogueAP PwnBox
 
-One Paragraph of project description goes here
+The project goal is to build a Rogue AP who can intercept credentials like HTTP authentification, FTP, SMTP ...
+The version 1 of the script setup an open access point named "WIFI GRATUIT". In the background a sniffer intercept all traffic and send you an email when the program get credentials.
 
 ## Getting Started
 

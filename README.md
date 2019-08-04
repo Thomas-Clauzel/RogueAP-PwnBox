@@ -3,36 +3,38 @@
 The project goal is to build a Rogue AP who can intercept credentials like HTTP authentification, FTP, SMTP ...
 The version 1 of the script setup an open access point named "WIFI GRATUIT". In the background a sniffer intercept all traffic and send you an email when the program get credentials.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Please before install the RogueAP make a proper install of Raspbian
+To install this RogueAP you just need the following stuff :
 
 ```
-Give examples
+A Raspberry PI 3
+An alfa network AWUS036NH
+Raspbian Jessie or Stretch
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+1 - Download the script
 
 ```
-Give the example
+wget https://raw.githubusercontent.com/Thomas-Clauzel/RogueAP-PwnBox/master/RogueAP.sh
 ```
 
-And repeat
+2 - Make it executable
 
 ```
-until finished
+sudo chmod+x RogueAP.sh
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+3- Run the script as root
+```
+sudo ./RogueAP.sh
+```
+4 - Reboot the raspberry PI
+```
+reboot
+```
 ## Running the tests
 
 Explain how to run the automated tests for this system

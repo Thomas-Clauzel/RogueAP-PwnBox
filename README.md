@@ -2,7 +2,7 @@
 
 The project goal is to build a Rogue AP who can intercept credentials like HTTP authentification, FTP, SMTP ...
 The version 1 of the script setup an open access point named "WIFI GRATUIT". In the background a sniffer intercept all traffic and send you an email when the program get credentials.
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://raw.githubusercontent.com/Thomas-Clauzel/RogueAP-PwnBox/master/pwnbox-schema.jpg)
 ### Prerequisites
 Please before install the RogueAP make a proper install of Raspbian
 To enable all functionnality like email alert you need to edit the script : 

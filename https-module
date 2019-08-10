@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "MITMPROXY MODE ENABLED"
+sudo apt install mitmproxy -y
+#sudo iptables -F
+#sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+#sudo iptables -A FORWARD -i eth0 -o wlan1 -m state --state RELATED,ESTABLISHED -j ACCEPT
+#dont redirect http only https
+#sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp --dport 443 -j REDIRECT --to-port 8080
+sudo mitmproxy -T --host -w dump.mitmlog

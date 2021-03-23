@@ -42,12 +42,4 @@ reboot
 
 * [net-creds](https://github.com/DanMcInerney/net-creds) - The sniffer
 
-## Authors
 
-Thomas CLAUZEL
-
-Thanks to : ------
-
-## License
-
-This project is licensed under the MIT License 
